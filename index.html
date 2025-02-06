@@ -1,51 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
+<!-- Thanks to https://cruip.com/demos/venus/ -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NeuralFPGA Hackathon - Coming Soon!</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NIR FPGA Hackathon</title>
+    <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|Oxygen:700" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/style.css">
+    <script src="https://unpkg.com/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
 </head>
-<body>
-    <div class="container">
-        <header>
-            <img src="images/logo.png" alt="NeuralFPGA Hackathon Logo" class="logo">
-        </header>
-        
+<body class="is-boxed has-animations">
+    <div class="body-wrap boxed-container">
+
         <main>
-            <div class="announcement">
-                <h1>Upcoming Hackathon!</h1>
-                <p>We're preparing an exciting three-day competition where building energy-efficient neuromorphic neural networks on FPGAs.</p>
-            </div>
-
-            <div class="cta">
-                <script async data-uid="3d32fc4edd" src="https://neuralfpga.kit.com/3d32fc4edd/index.js"></script>
-            </div>
-
-
-            <h2 style="text-align: center;">What is this?</h2>
-
-            <div class="features">
-                <div class="feature">
-                    <h4>Neuromorphic Intermediate Representation</h4>
-                    <p>We're building on NIR to improve interoperability between simulators and hardware.</p>
-                    <p><a href="https://neuroir.org">Learn more about NIR</a></p>
+            <section class="hero text-center text-light">
+				<div class="hero-bg"></div>
+				<div class="hero-particles-container">
+					<canvas id="hero-particles"></canvas>
+				</div>
+                <div class="container-sm">
+                    <div class="hero-inner">
+						<div class="hero-copy">
+	                        <h1 class="hero-title mt-0">FPGA Neural Hackathon</h1>
+	                        <p class="hero-paragraph">Help us develop the next-gen AI platforms with neuromorphic FPGAs. <br/> Netherlands, May 2025</p>
+	                        <div class="hero-cta">
+								<a class="button button-primary button-wide-mobile" href="https://docs.google.com/forms/d/e/1FAIpQLSdoTUsXmKgLCEcf0uq5ARin6X9VBE6hOOjGWmCuZ0mS_l-JWw/viewform?usp=dialog">Sign up here</a>
+							</div>
+						</div>
+						<div class="mockup-container">
+							<div class="mockup-bg">
+								<img src="dist/images/iphone-hero-bg.svg" alt="iPhone illustration">
+							</div>
+							<img class="device-mockup" src="dist/images/logo.png" alt="iPhone Hero">
+						</div>
+                    </div>
                 </div>
-                <div class="feature">
-                    <h4>FPGA Programming Challenge</h4>
-                    <p>Participants will compete to implement the fastest and most energy-efficient neural network on FPGAs.</p>
+            </section>
+
+			<section class="features-extended section">
+                <div class="features-extended-inner section-inner">
+					<div class="features-extended-wrap">
+						<div class="container">
+							<div class="feature-extended">
+								<div class="feature-extended-image">
+									<div class="mockup-bg">
+										<img src="dist/images/iphone-feature-bg-01.svg" alt="iPhone Feature 02 illustration">
+                                    </div>
+									<img class="device-mockup is-revealing" src="dist/images/fpga.png" alt="Hackathon logo">
+								</div>
+								<div class="feature-extended-body is-revealing">
+									<h3 class="mt-0 mb-16">Porting AI to FPGAs</h3>
+									<p class="m-0">FPGAs are a perfect target to accelerate AI. They are power-efficient and lightning fast.</p>
+                                    <p>We use modern compilation techniques to reduce the overhead so you can focus on building.</p>
+                                    <p><a class="button button-wide-mobile" href="https://github.com/SpinalHDL/SpinalHDL">Learn more about SpinalHDL</a></p>
+								</div>
+							</div>
+                            <br/><br/>
+							<div class="feature-extended">
+								<div class="feature-extended-body is-revealing">
+									<h3 class="mt-0 mb-16">NIR: Neuromorphic intelligence</h3>
+									<p class="m-0">We will be compiling networks using the Neuromorphic Intermediate Representation, which plugs directly into a thriving ecosystem.</p>
+                                    <p><a  class="button button-wide-mobile" href="https://neuroir.org">Learn more about NIR</a></p>
+								</div>
+								<div class="feature-extended-image">
+									<div class="mockup-bg">
+										<img src="dist/images/iphone-feature-bg-02.svg" alt="iPhone Feature 02 illustration">
+									</div>
+									<img class="device-mockup is-revealing" src="dist/images/nir_light.png" alt="NIR logo">
+								</div>
+							</div>
+							<div class="feature-extended">
+								<div class="feature-extended-image">
+									<div class="mockup-bg">
+										<img src="dist/images/iphone-feature-bg-03.svg" alt="iPhone Feature 03 illustration">
+									</div>
+									<img class="device-mockup is-revealing" src="dist/images/stopwatch.png" alt="iPhone Feature 03">
+								</div>
+								<div class="feature-extended-body is-revealing">
+									<h3 class="mt-0 mb-16">FPGA Programming challenge.</h3>
+									<p class="m-0">Participants will compete to implement the fastest and most energy-efficient neural network on FPGAs, supervised by the best in their field.</p>
+								</div>
+							</div>
+						</div>
+					</div>
                 </div>
-                <div class="feature">
-                    <h4>Close-to-zero overhead</h4>
-                    <p>We use modern compilation techniques to reduce the overhead so you can focus on building.</p>
-                    <p><a href="https://github.com/SpinalHDL/SpinalHDL">Learn more about SpinalHDL</a></p>
-                </div>
-            </div>
+            </section>
         </main>
 
-        <footer>
-            <p>© 2024 NeuralFPGA Hackathon</p>
+		<footer class="site-footer">
+			<div class="footer-particles-container">
+				<canvas id="footer-particles"></canvas>
+			</div>
+			<div class="site-footer-top">
+				<section class="cta section text-light">
+					<div class="container-sm">
+						<div class="cta-inner section-inner">
+							<div class="cta-header text-center">
+								<h2 class="section-title mt-0">Sign up to stay updated</h2>
+								<p class="section-paragraph">More info is coming, including exact dates, speakers, sponsor announcements, and competition framework. Stay tuned!</p>
+								<div class="cta-cta">
+									<a class="button button-primary button-wide-mobile" href="https://docs.google.com/forms/d/e/1FAIpQLSdoTUsXmKgLCEcf0uq5ARin6X9VBE6hOOjGWmCuZ0mS_l-JWw/viewform?usp=dialog">Sign up to receive more information</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
         </footer>
     </div>
+
+    <script src="dist/js/main.min.js"></script>
 </body>
-</html> 
+</html>
